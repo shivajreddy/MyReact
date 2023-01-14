@@ -19,7 +19,6 @@ export function Home() {
         ))}
       </Row>
 
-
     </div>
   )
 
