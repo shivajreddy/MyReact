@@ -1,15 +1,11 @@
 import { Link } from 'react-router-dom'
 import { Stack } from '@mui/material'
 import { logo } from '../utils/constants.jsx'
-// import {logo} from 'utils/constants'
+import SearchBar from './SearchBar'
 
 function NavBar () {
   
   return (
-    <div>
-      
-      <p style={{border : "dashed red"}}>test </p>
-      
       <Stack
         direction="row"
         alignItems="center"
@@ -24,23 +20,12 @@ function NavBar () {
         <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
           <img src={logo} alt="logo" height={45}/>
         </Link>
+        
+        <SearchBar/>
       
       
       </Stack>
-    </div>
   )
-  
 }
 
 export default NavBar
-
-/*
-<NavbarBs>
-  <Nav>
-    <Nav.Link to="/" as={NavLink}>Home</Nav.Link>
-    <Nav.Link to="/video/:id" as={NavLink}>video</Nav.Link>
-    <Nav.Link to="/channel/:id" as={NavLink}>channel</Nav.Link>
-    <Nav.Link to="/search/:searchTerm" as={NavLink}>search</Nav.Link>
-  </Nav>
-</NavbarBs>
-*/
